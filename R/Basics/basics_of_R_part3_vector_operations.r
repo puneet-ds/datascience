@@ -31,11 +31,14 @@ print(multi.example)
 substract.example <- numeric.vector2 - numeric.vector1
 print(substract.example)
 #==============================================================================
+#                         Built-in functions
+#==============================================================================
 sqrt(vec2) # Gives square root of each element in the vector.
 max(vec1) # Gives Maximum value in a specified vector.
 sum(vec1) # Adding elements of a given vector
 mean(vec2)
 median(vec1)
+prod(vec2) # Product of each element of a given vector.
 #==============================================================================
 #                           'Character' Vectors
 #==============================================================================
