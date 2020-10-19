@@ -49,3 +49,30 @@ print(combined.vector) # Output : "Hello Hi"  "From From" "R Me"
 # Slicing values using indexing. **Indexing in R starts from 1**
 text.vector1[1]
 text.vector1[1:3] # Output : "Hello" "From"  "R" **Upper bound is included in R**
+
+#===============================================================================
+#                          Naming Vectors
+#===============================================================================
+ # Lets say we have created a vector for storing temperature of 7 days.
+temperature <- c(10,20,30,40,50,60,70)
+# By creating vector above it would be difficult to identify the temperature on any particular day.
+# Also by above it is not clear that first entry is for Monday or Sunday..to avoid such issues
+# we can provide names to our vector
+
+# Lets create a days vector first.
+days_of_week <- c("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+
+# Now lets give the names to our temperature vector. By using the builtin function names()
+names(temperature) <- days_of_week
+# Now lets print the modified 'temperature' vector.
+print(temperature)
+
+# The out put will be
+# Sunday    Monday   Tuesday Wednesday  Thursday    Friday  Saturday 
+# 10        20        30        40        50        60        70 
+
+# Now it would be easy for us to extract the values from this vector based on 'day' by using slicing..
+temperature["Sunday"]
+temperature["Monday"]
+temperature_sun <- temperature["Sunday"]
+print(temperature_sun)
